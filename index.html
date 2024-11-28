@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/072211b0fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Czarter Jeziorak</title>
+</head>
+
+<body>
+    <header>
+        <p>test</p>
+        <div class="header-img">
+            <div class="header-text">
+                <h1>Mapa <span>Świata</span></h1>
+                <p>Z nami przeżyjesz przygodę!</p>
+                <button id="show-weather-btn">SPRAWDŹ POGODĘ</button>
+            </div>
+            <div class="header-bg"></div>
+        </div>
+        <div class="wrapper-weather">
+            <button class="close-weather">X</button>
+            <div class="top-weather">
+                <h1>Pogoda na dziś</h1>
+
+                <div class="main-info-weather">
+                    <div>
+                        <h3 class="city-name"></h3>
+                        <input type="text" placeholder="Wpisz nazwę miasta..."><button
+                            class="button-weather">Wyślij</button>
+                        <p class="warning-weather"></p>
+                    </div>
+                    <img src="./img/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo-weather">
+                </div>
+            </div>
+            <div class="bottom-weather">
+                <div class="headings-weather">
+                    <p>Pogoda:</p>
+                    <p>Temperatura:</p>
+                    <p>Wiatr:</p>
+                </div>
+                <div class="weather-info">
+                    <p class="weather"></p>
+                    <p class="temperature"></p>
+                    <p class="wind-speed"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="wrapper-nav">
+            <button class="burger-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="index.html">home</a></li>
+                <li class="nav-item"><a href="rezerwacje.html">rezerwacje</a></li>
+                <li class="nav-item"><a href="cennik.html">cennik</a></li>
+                <li class="nav-item"><a href="kontakt.html">kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>o nas</h2>
+        <div class="about-us-box top">
+            <div class="about-us-bg"></div>
+            <div class="about-us-text">
+                <h3>ZAPRASZAMY NA POKŁAD NASZYCH JACHTÓW</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic animi consequuntur,
+                    similique eveniet dolorem ipsum ex mollitia magni voluptatem?</p>
+            </div>
+        </div>
+        <div class="about-us-box middle">
+            <div class="about-us-bg"></div>
+            <div class="about-us-text">
+                <h3>Zapewnimy Ci niezapomniane przeżycia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic animi consequuntur,
+                    similique eveniet dolorem ipsum ex mollitia magni voluptatem?</p>
+            </div>
+        </div>
+        <div class="about-us-box bottom">
+            <div class="about-us-bg"></div>
+            <div class="about-us-text">
+                <h3>Zawsze na czas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic animi consequuntur,
+                    similique eveniet dolorem ipsum ex mollitia magni voluptatem?</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Czarter Jachtu <span class="icon-box">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </span></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

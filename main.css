@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header {
+    position: relative;
+}
+
+.wrapper-nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1a2f;
+    text-align: center;
+    line-height: 50px;
+}
+
+.burger-icon {
+    display: block;
+    margin: auto;
+    padding: 0 30px;
+    background-color: #0a1a2f;
+    border: none;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.burger-icon:hover {
+    color: rgb(10, 150, 188);
+}
+
+.nav-items {
+    display: none;
+}
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    padding: 0 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color .3s;
+
+}
+
+.nav-item a:hover {
+    color: rgb(10, 150, 188);
+}
+
+.header-img {
+    position: relative;
+    height: 300px;
+    background-image: url('./img/sailing-2455969_1280.jpg');
+    background-size: cover;   
+    background-position: center;
+}
+
+.header-text {
+    position: absolute;
+    justify-content: center;
+    text-align: center;  
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(59, 83, 119, 0.3);
+}
+
+.header-text h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.header-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+input::placeholder {
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    background: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+button:hover {
+    color: #333;
+    background-color: #ddd;
+}
+
+.wrapper-weather {
+   display: none;
+    position: fixed;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 800px;
+    padding: 20px 40px;
+    background-color: rgb(30, 77, 103);
+    border: 2px solid white;
+    border-radius: 25px;
+    z-index: 100;
+}
+
+.close-weather {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(78, 25, 25);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.top-weather {
+    height: 260px;
+}
+
+.bottom-weather {
+    height: 140px;
+}
+
+.main-info-weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.city-name {
+    font-size: 40px;
+}
+
+.headings-weather,
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.headings-weather p,
+.weather-info p {
+    width: 33.3%;
+    text-align: center;
+}
+
+.headings-weather {
+    height: 35%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.weather-info {
+    height: 65%;
+    font-size: 26px;
+}
+
+.photo-weather {
+    width: 140px;
+    height: 140px;
+	object-fit: contain;
+}
+
+.warning-weather {
+    margin-top: 10px;
+    font-size: 14px;
+    color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-us-box {
+    position: relative;
+    height: 300px;
+    margin: 20px 0;
+    background-attachment: fixed;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; 
+    overflow: hidden;
+}
+
+.top {
+    background-image: url('./img/sailing-yacht-1372863_1280.jpg');
+}
+
+.middle {
+    background-image: url('./img/fiumanka-1049747_1280.jpg');
+}
+
+.bottom {
+    background-image: url('./img/port-2295471_1280.jpg');
+}
+
+.about-us-text {
+   position: absolute;
+    bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.about-us-text h3 {
+        margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-us-bg {
+    position: absolute;
+    bottom: 0;
+    height: 44%;
+    width: 100%;
+    background-color: rgba(59, 83, 119, 0.8);
+}
+footer {
+    height: 50px;
+    line-height: 2px;
+    background-color: #0a1a2f;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fab {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+
+
+.prices-table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: rgba(59, 83, 119, 0.8); 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+.term-list {
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px 0;
+
+}
+
+.term-box, .payments-box {
+   margin: 0 auto;
+   padding: 10px 0px;
+   width: 600px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.contact-info {
+    font-size: 15px;
+    
+}
+
+.contact-info fas {
+    margin-right: 10px;
+}
+
+
+
+.icon-box a {
+    margin: 0 10px;
+    color: white;
+    font-size: 30px;
+    transition: color .3s;
+}
+
+.icon-box a:hover {
+    color: rgb(10, 150, 188);
+}
+
+
+@media(min-width: 760px) {
+    .burger-icon {
+        display: none;
+    }
+
+    .nav-items {
+        display: block;
+    }
+
+    main h2 {
+    font-size: 30px;
+    }
+
+    .about-us-bg {
+        height: 30%;
+    }
+
+    .about-us-text h3 {
+        font-size: 20px;
+    }
+    .about-us-text p {
+        font-size: 15px;
+    }
+}
